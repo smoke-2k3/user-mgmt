@@ -38,7 +38,7 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/smoke-2k3/user-mgmt.git
    cd employwise-frontend
    ```
 
@@ -102,8 +102,3 @@ Ensure you have the following installed:
 - This project uses the Reqres API, which is a mock API for demonstration purposes. Changes to user data are not persisted.
 
 ---
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
