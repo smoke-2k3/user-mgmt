@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# EmployWise Front-End Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application designed to interact with the Reqres API to perform basic user management functions. The application supports user login, user list display with pagination, and edit/delete operations on users.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Login Authentication**:
+   - Users can log in using credentials.
+   - Token is stored in `localStorage`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **User List**:
+   - Displays a paginated list of users fetched from the Reqres API.
+   - Users' first name, last name, and avatar are displayed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Edit/Delete Operations**:
+   - Edit user details (first name, last name, email).
+   - Delete users from the list.
 
-### `npm test`
+4. **Error Handling**:
+   - Displays appropriate error messages for API failures.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Responsive UI**:
+   - Designed to work seamlessly on both desktop and mobile.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed:
+- **Node.js**: [Download and install Node.js](https://nodejs.org/)
+- **npm**: Comes bundled with Node.js.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Installation and Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd employwise-frontend
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Start the Development Server**:
+   ```bash
+   npm start
+   ```
+   - The app will be available at [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+.
+├── src/
+│   ├── components/
+│   │   ├── Login.js        # Login component
+│   │   └── UsersList.js    # Users list and management component
+│   ├── App.js              # Main app entry
+│   └── index.js            # React DOM rendering
+├── public/
+│   └── index.html          # Root HTML file
+└── package.json            # Project metadata and dependencies
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Login**:
+   - Use the credentials:
+     - Email: `eve.holt@reqres.in`
+     - Password: `cityslicka`
 
-### Analyzing the Bundle Size
+2. **Navigate to Users List**:
+   - Upon successful login, you will see a list of users.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Edit/Delete Users**:
+   - Click "Edit" to modify user details.
+   - Click "Delete" to remove a user from the list.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technologies Used
 
-### Advanced Configuration
+- **React**: Front-end framework.
+- **Axios**: For HTTP requests.
+- **React Router**: For navigation.
+- **CSS**: For styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- This project uses the Reqres API, which is a mock API for demonstration purposes. Changes to user data are not persisted.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
